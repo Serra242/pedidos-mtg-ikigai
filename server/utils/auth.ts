@@ -32,7 +32,8 @@ export async function requireUser(event: H3Event): Promise<UsuarioAutenticado> {
       nombre: decoded.name || (decoded.email ? decoded.email.split('@')[0] || 'Mago' : 'Mago'),
       esAdmin: decoded.uid === config.adminUid
     }
-  } catch {
+  } catch (err) {
+    console.error('[requireUser] Error al verificar el token:', err)
     throw createError({ statusCode: 401, statusMessage: 'Token inválido o caducado.' })
   }
 }
