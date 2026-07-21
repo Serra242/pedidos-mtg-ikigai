@@ -13,7 +13,7 @@ export default defineNuxtConfig({
     adminUid: process.env.ADMIN_UID || '',
     googleScriptUrl: process.env.GOOGLE_SCRIPT_URL || '',
 
-    // --- Expuestas al cliente (prefijo "public") ---
+    // --- Expuestas al cliente (prefijo "public") --
     public: {
       firebaseApiKey: process.env.FIREBASE_API_KEY || '',
       firebaseAuthDomain: process.env.FIREBASE_AUTH_DOMAIN || '',
