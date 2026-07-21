@@ -38,12 +38,5 @@ export default defineNuxtConfig({
       __VUE_PROD_DEVTOOLS__: 'false',
       __VUE_OPTIONS_API__: 'true'
     }
-  },
-  
-  nitro: {
-    // asegura que el bundle de servidor también recibe el mismo define
-    define: {
-      __VUE_PROD_DEVTOOLS__: 'false'
-    }
   }
 })
