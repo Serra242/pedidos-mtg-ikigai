@@ -38,5 +38,15 @@ export default defineNuxtConfig({
       __VUE_PROD_DEVTOOLS__: 'false',
       __VUE_OPTIONS_API__: 'true'
     }
+  },
+  
+  nitro: {
+    replace: {
+      __VUE_PROD_DEVTOOLS__: 'false',
+      __VUE_OPTIONS_API__: 'true'
+    },
+    externals: {
+      inline: ['pinia']   // ← la clave del arreglo: fuerza a Nitro a empaquetar pinia en vez de dejarla como dependencia externa sin procesar
+    }
   }
 })
