@@ -44,6 +44,7 @@ async function onRegistro() {
       <div class="auth-header">
         <h1>El99</h1>
         <p>Comunidad MTG Hub</p>
+        <a href="https://ikigaicomicstienda.com" target="_blank" rel="noopener noreferrer" class="auth-footer-link">Una iniciativa de Ikigai Comics</a>
       </div>
 
       <div v-if="modo === 'login'" class="auth-box">

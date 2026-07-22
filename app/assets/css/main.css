@@ -1,11 +1,11 @@
 :root {
-    --bg-oscuro: #16161a;
-    --panel-oscuro: #24242c;
-    --naranja-el99: #FF6600;
-    --naranja-hover: #ff8533;
-    --rosa-palo: #F4C2C2;
+    --bg-oscuro: #1c1a20;
+    --panel-oscuro: #2a262f;
+    --naranja-el99: #9b6bdb;
+    --naranja-hover: #b088e8;
+    --rosa-palo: #e8a5c4;
     --texto-claro: #fffffe;
-    --texto-gris: #94a1b2;
+    --texto-gris: #9a94a6;
     --verde-ok: #2cb67d;
     --amarillo-warn: #f5c842;
     --rojo-eliminar: #ff5252;
@@ -36,7 +36,7 @@ body { background-color: var(--bg-oscuro); color: var(--texto-claro); font-famil
 .auth-header { text-align: center; margin-bottom: 30px; }
 .auth-header h1 { color: var(--texto-claro); margin: 0; font-size: 3rem; text-shadow: 2px 2px 0px rgba(0,0,0,0.5); }
 .auth-header p { color: var(--texto-gris); margin: 5px 0 0 0; }
-.auth-box { background: var(--panel-oscuro); padding: 40px 30px; border-radius: 12px; border: 1px solid rgba(255,102,0,0.2); box-shadow: 0 15px 30px rgba(0,0,0,0.6); }
+.auth-box { background: var(--panel-oscuro); padding: 40px 30px; border-radius: 12px; border: 1px solid rgba(155,107,219,0.25); box-shadow: 0 15px 30px rgba(0,0,0,0.6); }
 .auth-box h2 { text-align: center; color: var(--naranja-el99); border-bottom: 2px solid rgba(255,255,255,0.1); padding-bottom: 15px; margin-top: 0; }
 .input-group { margin-bottom: 20px; }
 .input-group label { display: block; color: var(--texto-gris); font-size: 0.9rem; margin-bottom: 8px; }
@@ -152,7 +152,7 @@ td { padding: 12px 10px; border-bottom: 1px solid #2a2a35; vertical-align: middl
 
 /* Checkboxes custom */
 .checkbox-item { display: flex; align-items: center; gap: 10px; cursor: pointer; padding: 8px 10px; border-radius: 8px; transition: background 0.2s; color: var(--texto-claro); user-select: none; }
-.checkbox-item:hover { background: rgba(255,102,0,0.08); }
+.checkbox-item:hover { background: rgba(155,107,219,0.1); }
 .checkbox-item input[type="checkbox"] { display: none; }
 .checkbox-custom { width: 20px; height: 20px; flex-shrink: 0; border: 2px solid #555; border-radius: 5px; background: rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; transition: var(--suave); font-size: 0.75rem; }
 .checkbox-item input[type="checkbox"]:checked + .checkbox-custom { background: var(--naranja-el99); border-color: var(--naranja-el99); color: #fff; }
@@ -179,7 +179,7 @@ td { padding: 12px 10px; border-bottom: 1px solid #2a2a35; vertical-align: middl
 .historial-card { background: rgba(0,0,0,0.2); border: 1px solid #333; border-radius: 10px; margin: 16px 24px; padding: 16px; }
 .historial-card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; flex-wrap: wrap; gap: 6px; }
 .historial-fecha { font-size: 0.8rem; color: var(--texto-gris); }
-.historial-grupo { font-size: 0.78rem; background: rgba(255,102,0,0.12); color: var(--naranja-el99); border: 1px solid rgba(255,102,0,0.3); padding: 2px 8px; border-radius: 10px; }
+.historial-grupo { font-size: 0.78rem; background: rgba(155,107,219,0.15); color: var(--naranja-el99); border: 1px solid rgba(155,107,219,0.35); padding: 2px 8px; border-radius: 10px; }
 .historial-cartas { list-style: none; padding: 0; margin: 0; }
 .historial-cartas li { font-size: 0.88rem; color: var(--texto-claro); padding: 4px 0; border-bottom: 1px solid #2a2a35; display: flex; justify-content: space-between; }
 .historial-cartas li:last-child { border-bottom: none; }
@@ -198,6 +198,14 @@ td { padding: 12px 10px; border-bottom: 1px solid #2a2a35; vertical-align: middl
 .admin-pills { display: flex; flex-wrap: wrap; gap: 6px; }
 .admin-pill { background: rgba(0,0,0,0.3); border: 1px solid #444; color: var(--texto-claro); padding: 3px 10px; border-radius: 12px; font-size: 0.78rem; }
 .admin-empty { padding: 24px; text-align: center; }
+
+/* ============ MARCA (Ikigai Comics) ============ */
+.auth-footer-link { display: inline-block; margin-top: 10px; color: var(--texto-gris); font-size: 0.78rem; text-decoration: none; opacity: 0.8; transition: var(--suave); }
+.auth-footer-link:hover { color: var(--naranja-el99); opacity: 1; }
+
+.app-footer { text-align: center; padding: 24px 20px 30px; color: var(--texto-gris); font-size: 0.8rem; }
+.app-footer a { color: var(--naranja-el99); text-decoration: none; font-weight: bold; }
+.app-footer a:hover { color: var(--naranja-hover); text-decoration: underline; }
 
 /* ============ RESPONSIVE ============ */
 @media (max-width: 850px) {

@@ -79,7 +79,10 @@ async function cerrarSesion() {
       <SearchPanel :class="{ 'mobile-hidden': tabActiva !== 'buscador' }" />
       <CartPanel :class="{ 'mobile-hidden': tabActiva !== 'cesta' }" />
     </main>
-
+    <footer class="app-footer">
+      Una iniciativa de
+      <a href="https://ikigaicomicstienda.com" target="_blank" rel="noopener noreferrer">Ikigai Comics</a>
+    </footer>
     <HistorialModal :visible="modalHistorial" @cerrar="modalHistorial = false" />
     <AdminModal :visible="modalAdmin" @cerrar="modalAdmin = false" />
   </div>
