@@ -75,7 +75,7 @@ async function enviarPedido() {
 </script>
 
 <template>
-  <section id="panel-cesta" class="panel fade-in panel-cesta mobile-hidden">
+  <section id="panel-cesta" class="panel fade-in panel-cesta">
     <div class="panel-cesta-header">
       <h2>Tu Pedido ({{ cestaStore.items.length }})</h2>
       <div class="limite-badge tooltip" :class="claseBadge">
@@ -103,10 +103,10 @@ async function enviarPedido() {
             </td>
           </tr>
           <tr v-for="(item, i) in cestaStore.items" :key="i" class="fade-in">
-            <td style="color:var(--texto-claro);">{{ item.nombre }}</td>
-            <td style="color:var(--texto-gris); font-size:0.82rem;">{{ item.set }} [{{ item.setCode.toUpperCase() }}]</td>
-            <td class="text-center">
-              <button type="button" class="btn-eliminar-fila" @click="eliminar(i)">✕</button>
+            <td data-label="Carta" style="color:var(--texto-claro);">{{ item.nombre }}</td>
+            <td data-label="Edición" style="color:var(--texto-gris); font-size:0.82rem;">{{ item.set }} [{{ item.setCode.toUpperCase() }}]</td>
+            <td data-label="" class="text-center">
+              <button type="button" class="btn-eliminar-fila" @click="eliminar(i)">✕ Quitar</button>
             </td>
           </tr>
         </tbody>
